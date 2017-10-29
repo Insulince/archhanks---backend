@@ -19,16 +19,16 @@ const UserSchema = mongoose.Schema({
         required: true
     },
     basalRate: {
-        type: double
+        type: Number
     },
     carbRatio: {
-        type: double
+        type: Number
     },
     correctionRatio: {
-        type: double
+        type: Number
     },
     IOBDuration: {
-        type: TimeRanges
+        type: Number
     }
 });
 
