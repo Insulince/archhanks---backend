@@ -10,7 +10,7 @@ router.get('/', (req, res, next) => {
 
 router.post('/suggestedSearch', (req, response) => {
     let url = 'https://api.nal.usda.gov/ndb/search/?';
-    let maxRows = 10;
+    let maxRows = 7;
     let searchKey = req.body.key;
     let properties = {format: 'json', q: searchKey, max: maxRows, api_key: apiKey};
     sendData(url, properties, response);
